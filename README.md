@@ -56,7 +56,7 @@
 </div>
 
 <div align="center">
-  <img src="images/assets/output.png" style="border-radius: 20px; max-width: 80%; height: auto;">
+  <img src="images/assets/output.jpg" style="border-radius: 20px; max-width: 80%; height: auto;">
 </div>
 
 
