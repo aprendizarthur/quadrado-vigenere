@@ -4,10 +4,13 @@ function cifrar(mensagem, chave){
         console.log(mensagem);
         console.log(mensagem.length);
 
+        console.log("CHAVE:");
+        console.log(chave);
+
     //TRATANDO A MENSAGEM----------------------------------------------------------------------------------------------------------------------------------------
         var mensagem = mensagem.toLowerCase().replace(/[áàâãä]/g, "a").replace(/[éèêë]/g, "e").replace(/[íìîï]/g, "i").replace(/[óòôõö]/g, "o").replace(/[úùûü]/g, "u").replace(/[ç]/g, "c").replace(/[\.,;:!?()\[\]{}"']/g, "").replace(/\s+/g, "").replace(/[-]/g, "");
         
-        //logs pdara verificação
+        //logs para verificação
         console.log("MENSAGEM TRATADA:");
         console.log(mensagem);
         console.log(mensagem.length);
@@ -50,7 +53,7 @@ function cifrar(mensagem, chave){
 
         }
 
-    //DECLARANDO "MATRIZ"/ QUADRADO DE VIGENÈRE
+    //DECLARANDO "MATRIZ"/QUADRADO DE VIGENÈRE
     var a = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
     var b = ["b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","a"];
     var c = ["c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","a","b"];
@@ -180,7 +183,7 @@ function cifrar(mensagem, chave){
 //declaração da variavel que recebe a mensagem original
 var mensagem = "Nos recantos mais distantes da mente humana, onde os ecos do desconhecido reverberam, repousa a verdade oculta. Somente aqueles que ousam caminhar pela linha tênue entre a razão e a loucura poderão desvelar os segredos guardados nas sombras do tempo. Há um código que liga o passado ao futuro, um elo perdido que aguarda ser encontrado. Quem decifrar o enigma do silêncio, poderá contemplar o abismo da sabedoria sem se perder na vastidão do infinito.";
 //declaração da variavel que recebe a CHAVE para o quadrado de vigenère
-var chave = "oie";
+var chave = "chaveteste";
 //declaração da varivael que recebe a mensagem cifrada (função cifrar)
 var cifrada = cifrar(mensagem,chave);
 
